@@ -30,6 +30,9 @@ export default class Header extends Component {
                             <li className="nav-item">
                                 <NavLink className={({isActive})=> isActive ? 'nav-link active bg-dark text-white' : 'nav-link' } style={({isActive})=> isActive ? {fontSize:30} : {}  } to="/reduxdemo">Redux</NavLink>
                             </li>
+                            <li className="nav-item">
+                                <NavLink className={({isActive})=> isActive ? 'nav-link active bg-dark text-white' : 'nav-link' } style={({isActive})=> isActive ? {fontSize:30} : {}  } to="/bt-game">Bài tập game</NavLink>
+                            </li>
                             {/* <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                                 <div className="dropdown-menu" aria-labelledby="dropdownId">
