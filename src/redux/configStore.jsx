@@ -1,4 +1,5 @@
 import {configureStore} from '@reduxjs/toolkit'
+import { baiTapGameReducer } from './reducers/baiTapGameReducer';
 import { arrNguoiDungReducer } from './reducers/nguoiDungReducer';
 
 export const store = configureStore({
@@ -23,7 +24,8 @@ export const store = configureStore({
                 default : return state;
             }
         },
-        arrNguoiDungReducer: arrNguoiDungReducer
+        arrNguoiDungReducer,
+        baiTapGameReducer
     }
 })
 
