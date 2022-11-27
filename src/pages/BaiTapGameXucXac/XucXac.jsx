@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { datCuocAction } from '../../redux/actions/baiTapGameAction';
 
 class XucXac extends Component {
   renderKetQua = () => {
@@ -20,10 +21,7 @@ class XucXac extends Component {
           <div className='col-4'>
             <button className='btn' onClick={() => {
               //B1: Tạo ra object action
-              const action = {
-                type: 'DAT_CUOC',
-                payload: true
-              }
+              const action = datCuocAction(true);
               //B2: Dùng this.props.dispatch gửi lên reducer
               this.props.dispatch(action);
             }}>
@@ -44,10 +42,7 @@ class XucXac extends Component {
           <div className='col-4'>
             <button className='btn' onClick={() => {
               //B1: Tạo ra object action
-              const action = {
-                type: 'DAT_CUOC',
-                payload: false
-              }
+              const action = datCuocAction(false);
               //B2: Dùng this.props.dispatch gửi lên reducer
               this.props.dispatch(action);
             }}>

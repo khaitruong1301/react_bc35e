@@ -33,13 +33,16 @@ export default class Header extends Component {
                             <li className="nav-item">
                                 <NavLink className={({isActive})=> isActive ? 'nav-link active bg-dark text-white' : 'nav-link' } style={({isActive})=> isActive ? {fontSize:30} : {}  } to="/bt-game">Bài tập game</NavLink>
                             </li>
-                            {/* <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hooks</a>
                                 <div className="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a className="dropdown-item" href="#">Action 1</a>
-                                    <a className="dropdown-item" href="#">Action 2</a>
+                                    <NavLink className="dropdown-item" to="/hook-use-state">useState</NavLink>
+                                    <NavLink className="dropdown-item" to="/hook-use-effect">useEffect</NavLink>
+                                    <NavLink className="dropdown-item" to="/hook-use-effect-update">useEffect (update)</NavLink>
+                                    <NavLink className="dropdown-item" to="/hook-use-callback">useCallBack (update)</NavLink>
+                                    
                                 </div>
-                            </li> */}
+                            </li>
                         </ul>
                         <div className="d-flex my-2 my-lg-0">
                             <NavLink to={'/btgiohang'}>
