@@ -5,7 +5,6 @@ import { useState } from 'react'
 import Comment from './Comment';
 const UseCallBackDemo = () => {
     const [like, setLike] = useState(1);
-
     const [number,setNumber] = useState(1);
     
     const renderLike = () => {

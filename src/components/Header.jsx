@@ -40,6 +40,15 @@ export default class Header extends Component {
                                     <NavLink className="dropdown-item" to="/hook-use-effect">useEffect</NavLink>
                                     <NavLink className="dropdown-item" to="/hook-use-effect-update">useEffect (update)</NavLink>
                                     <NavLink className="dropdown-item" to="/hook-use-callback">useCallBack (update)</NavLink>
+                                    <NavLink className="dropdown-item" to="/hook-use-memo">use memo (update)</NavLink>
+                                    <NavLink className="dropdown-item" to="/hook-use-ref">use ref (update)</NavLink>
+                                    <NavLink className="dropdown-item" to="/hook-use-redux">use redux (update)</NavLink>
+                                </div>
+                            </li>
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hooks Router</a>
+                                <div className="dropdown-menu" aria-labelledby="dropdownId">
+                                    <NavLink className="dropdown-item" to="/hook-use-navigate">useNavigate</NavLink>
                                     
                                 </div>
                             </li>
