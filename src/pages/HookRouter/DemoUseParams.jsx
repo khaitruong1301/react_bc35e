@@ -23,7 +23,7 @@ const DemoUseParams = () => {
   useEffect(() => {
     //call api
     getProductById(params.id)
-  }, [])
+  }, [params.id])
 
   return (
     <div className='container'>

@@ -40,6 +40,8 @@ import UseRefDemo from './pages/HooksDemo/UseRefDemo/UseRefDemo';
 import UseRedux from './pages/HooksDemo/UseRedux/UseRedux';
 import DemoUseNavigate from './pages/HookRouter/DemoUseNavigate';
 import DemoUseParams from './pages/HookRouter/DemoUseParams';
+import DemoUseSearchParams from './pages/HookRouter/DemoUseSearchParams';
+import DemoCustom from './pages/HookRouter/DemoCustom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -77,8 +79,12 @@ root.render(
             <Route path='hook-use-navigate' element={<DemoUseNavigate />} ></Route>
             <Route path='detail'>
               <Route path=':id' element={<DemoUseParams />}></Route>
-
             </Route>
+
+            <Route path='hook-use-search-params' element={<DemoUseSearchParams />} ></Route>
+
+            <Route path='demo-custom-hook' element={<DemoCustom />} ></Route>
+
            
             {/* <Route path='*' element={<Navigate to="/page404" />} /> */}
             <Route path='*' element={<Navigate to="/" />} />
